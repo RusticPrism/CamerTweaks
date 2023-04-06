@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.rusticprism.cameratweaks.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "CameraMixin",
+    "GameOptionsMixin",
+    "MouseMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

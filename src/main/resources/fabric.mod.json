@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "cameratweaks",
+  "version": "${version}",
+  "name": "CameraTweaks",
+  "description": "CameraTweaks",
+  "authors": ["RusticPrism"],
+  "contact": {
+    "repo": "https://github.com/Anwender/CameraTweaks"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/cameratweaks/logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "de.rusticprism.cameratweaks.CameraTweaks"
+    ]
+  },
+  "mixins": [
+    "CameraTweaks.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
