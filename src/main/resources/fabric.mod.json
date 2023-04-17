@@ -1,10 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "cameratweaks",
+  "id": "camera-tweaks",
   "version": "${version}",
   "name": "CameraTweaks",
   "description": "Zoom in F5 with you Scroll-Wheel.",
-  "authors": ["RusticPrism"],
+  "authors": [
+    "RusticPrism"
+  ],
   "contact": {
     "repo": "https://github.com/Anwender/CameraTweaks"
   },
@@ -21,7 +23,6 @@
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-    "fabric": "*",
     "minecraft": ">=1.19"
   }
 }

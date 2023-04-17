@@ -12,6 +12,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class GameOptionsMixin {
     @Inject(method = "setPerspective", at = @At("HEAD"))
     public void onPerspective(Perspective perspective, CallbackInfo ci) {
-        CameraTweaks.distance = 4;
+        if (CameraTweaks.config.get("default-distance") == null) {
+            CameraTweaks.distance = 4;
+        } else CameraTweaks.distance = CameraTweaks.config.get("default-distance").getAsInt();
     }
 }
