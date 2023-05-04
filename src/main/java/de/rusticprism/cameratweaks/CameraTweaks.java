@@ -16,7 +16,6 @@ public class CameraTweaks implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        ;
         System.out.println("Enabled CameraTweaks");
         if (!FOLDER.exists()) {
             FOLDER.getParentFile().mkdirs();
